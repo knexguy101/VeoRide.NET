@@ -1,0 +1,6 @@
+C:\Users\chris\source\repos\VeoRide.NET\VeoRide.NET\bin\Debug\netstandard2.0\VeoRide.NET.deps.json
+C:\Users\chris\source\repos\VeoRide.NET\VeoRide.NET\bin\Debug\netstandard2.0\VeoRide.NET.dll
+C:\Users\chris\source\repos\VeoRide.NET\VeoRide.NET\obj\Debug\netstandard2.0\VeoRide.NET.csprojAssemblyReference.cache
+C:\Users\chris\source\repos\VeoRide.NET\VeoRide.NET\obj\Debug\netstandard2.0\VeoRide.NET.csproj.CoreCompileInputs.cache
+C:\Users\chris\source\repos\VeoRide.NET\VeoRide.NET\obj\Debug\netstandard2.0\VeoRide.NET.AssemblyInfoInputs.cache
+C:\Users\chris\source\repos\VeoRide.NET\VeoRide.NET\obj\Debug\netstandard2.0\VeoRide.NET.AssemblyInfo.cs
