@@ -6,7 +6,7 @@ using System.Text;
 
 namespace VeoRide.NET.Functions
 {
-    class PUT
+    public class PUT
     {
         public static HttpResponseMessage Location(VeoRideClient Client, Models.Coordinate Coordinate)
         {

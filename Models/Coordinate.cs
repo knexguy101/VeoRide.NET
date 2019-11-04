@@ -4,7 +4,7 @@ using System.Text;
 
 namespace VeoRide.NET.Models
 {
-    class Coordinate
+    public class Coordinate
     {
         public string Lat { get; set; }
         public string Long { get; set; }

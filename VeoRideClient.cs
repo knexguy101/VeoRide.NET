@@ -3,6 +3,7 @@ using System;
 using System.Net;
 using System.Net.Http;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace VeoRide.NET
 {
@@ -19,26 +20,29 @@ namespace VeoRide.NET
             if (SMS != "")
             {
                 SetupClient(Proxy);
-                var getSMS = Functions.GET.SMSCode(this, SMS);
-                var SMSData = getSMS.Content.ReadAsStringAsync().Result;
-                while(!Cancellation.IsCancellationRequested)
+                Task.Run(() =>
                 {
-                    if(VerificationCode == null)                    
-                        Thread.Sleep(250);
-                    else
+                    var getSMS = Functions.GET.SMSCode(this, SMS);
+                    var SMSData = getSMS.Content.ReadAsStringAsync().Result;
+                    while (!Cancellation.IsCancellationRequested)
                     {
-                        //bad idea to not check for certain jobject params but at this point you can just fix it as you like
-                        //TODO check status code and check if certain items exist in content
-                        var verifySMS = Functions.POST.VerifyCode(this, this.VerificationCode, SMS);
-                        var VerifyData = verifySMS.Content.ReadAsStringAsync().Result;
-                        JObject temp = JObject.Parse(VerifyData);
-                        if(temp["msg"].Value<string>() == "Request Success")
+                        if (VerificationCode == null)
+                            Thread.Sleep(250);
+                        else
                         {
-                            AuthToken = temp["data"]["jwtAuthentication"]["accessToken"].Value<string>();
-                            break;
+                            //bad idea to not check for certain jobject params but at this point you can just fix it as you like
+                            //TODO check status code and check if certain items exist in content
+                            var verifySMS = Functions.POST.VerifyCode(this, this.VerificationCode, SMS);
+                            var VerifyData = verifySMS.Content.ReadAsStringAsync().Result;
+                            JObject temp = JObject.Parse(VerifyData);
+                            if (temp["msg"].Value<string>() == "Request Success")
+                            {
+                                AuthToken = temp["data"]["jwtAuthentication"]["accessToken"].Value<string>();
+                                break;
+                            }
                         }
                     }
-                }
+                });
             }
         }
 

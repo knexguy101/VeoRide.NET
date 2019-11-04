@@ -5,7 +5,7 @@ using System.Text;
 
 namespace VeoRide.NET.Functions
 {
-    class GET
+    public class GET
     {
         public static HttpResponseMessage SMSCode(VeoRideClient Client, string SMS)
         {

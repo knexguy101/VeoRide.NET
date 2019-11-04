@@ -6,7 +6,7 @@ using System.Text;
 
 namespace VeoRide.NET.Functions
 {
-    class POST
+    public class POST
     {
         public static HttpResponseMessage VerifyCode(VeoRideClient Client, string SMSCode, string SMS, string AppVersion = "2.3.9", string PhoneType = "iPhone XR")
         {

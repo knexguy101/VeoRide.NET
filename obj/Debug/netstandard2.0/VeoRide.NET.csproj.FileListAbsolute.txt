@@ -4,3 +4,6 @@ C:\Users\chris\source\repos\VeoRide.NET\VeoRide.NET\obj\Debug\netstandard2.0\Veo
 C:\Users\chris\source\repos\VeoRide.NET\VeoRide.NET\obj\Debug\netstandard2.0\VeoRide.NET.csproj.CoreCompileInputs.cache
 C:\Users\chris\source\repos\VeoRide.NET\VeoRide.NET\obj\Debug\netstandard2.0\VeoRide.NET.AssemblyInfoInputs.cache
 C:\Users\chris\source\repos\VeoRide.NET\VeoRide.NET\obj\Debug\netstandard2.0\VeoRide.NET.AssemblyInfo.cs
+C:\Users\chris\source\repos\VeoRide.NET\VeoRide.NET\bin\Debug\netstandard2.0\VeoRide.NET.pdb
+C:\Users\chris\source\repos\VeoRide.NET\VeoRide.NET\obj\Debug\netstandard2.0\VeoRide.NET.dll
+C:\Users\chris\source\repos\VeoRide.NET\VeoRide.NET\obj\Debug\netstandard2.0\VeoRide.NET.pdb
