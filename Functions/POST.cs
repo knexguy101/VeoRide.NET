@@ -8,7 +8,7 @@ namespace VeoRide.NET.Functions
 {
     class POST
     {
-        public static HttpResponseMessage VerifyCode(VeoRideClient Client, string SMSCode, string SMS, string AppVersion = "2.3.9", string PhoneType = "iPhone XR")
+        public static HttpResponseMessage VerifyCode(VeoRideClient Client, string SMSCode, string SMS, string AppVersion = "3.4.0", string PhoneType = "iPhone XR")
         {
             JObject temp = new JObject()
             {
